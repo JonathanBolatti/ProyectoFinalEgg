@@ -163,11 +163,11 @@ input {
     height: 100%;
 }
 
-.btn-action {
+/* .btn-action {
     color: var(--color-secondary);
-}
+} */
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators  [data-bs-target]{
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 30 px;
@@ -209,11 +209,7 @@ input {
 
 .footer {
     background: var(--color-primary);
-    position: static;
     width: 100%;
-    bottom: 0;
-    border: 0;
-
 }
 
 .contact {
@@ -297,10 +293,10 @@ input {
         font-size: 12px;
     }
 
-    .footer {
+    /* .footer {
         position: revert;
         bottom: 0;
-    }
+    } */
 
 }
 
@@ -316,10 +312,10 @@ input {
         min-width: 120px;
     }
 
-    .footer {
+    /* .footer {
         position: fixed;
         bottom: 0;
-    }
+    } */
 
 }
 
@@ -349,9 +345,9 @@ input {
         font-size: 12px;
     }
 
-    .footer {
+    /* .footer {
         position: fixed;
         bottom: 0;
-    }
+    } */
 
 }
