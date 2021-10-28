@@ -1,0 +1,337 @@
+/* VARIABLES DEFINIDIAS */
+:root {
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: hsla(0, 0%, 0%, 0.364);
+    --color-secondary: #00ff15;
+    --black1: #1a1b1f;
+    --black2: #30353b;
+    --boton-padding: 20px 40px;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* font-family: 'Hammersmith One', sans-serif; */
+
+    background: var(--color-primary);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #1b2f62, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, var(--color-primary), #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 50px 0;
+    height: auto;
+}
+
+.hero {
+    width: 100%;
+
+}
+
+nav {
+    background: var(--color-primary);
+    width: 100%;
+    height: 100px;
+    font-weight: 400;
+    border-bottom: 0.2px solid var(--color-secondary);
+}
+
+nav label,
+input {
+    display: none;
+}
+
+.nav__img {
+    color: #FFF;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.nav__container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav__item:hover {
+    color: #fff;
+    text-shadow: 0 0 7px var(--color-secondary), 0 0 10px var(--color-secondary);
+}
+
+.nav__item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-weight: inherit;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    margin-right: 20px;
+
+}
+
+.nav__item::after {
+    content: "";
+    display: block;
+    background: var(--color-secondary);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+    opacity: 0.8;
+}
+
+/* config para que la barra del nav se muestre al 100% */
+
+.nav__item:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    color: #fff;
+}
+
+
+/* MENU HAMBURGUESA */
+.nav__input:checked+.nav__menu {
+    background-color: tomato;
+}
+
+.nav__label,
+.nav__input {
+    display: none;
+}
+
+.nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+
+/* LOGO NAV */
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.imagen__logo {
+    display: flex;
+    background-color: #fff;
+    width: 80px;
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0px 0px 6px 2px var(--color-secondary);
+}
+
+.logo__name {
+    font-weight: inherit;
+    font-size: 28px;
+    color: #fff;
+    white-space: nowrap;
+    margin: auto;
+    margin-left: 10px;
+    text-shadow: 0 0 7px var(--color-secondary), 0 0 10px var(--color-secondary);
+
+}
+
+/* SLIDER */
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-action{
+    color: var(--color-secondary);
+}
+carousel-indicators button{
+    color: blue;
+}
+
+
+
+
+.explicacion-print {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid;
+    bottom: 10px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background: var(--color-primary);
+    position: static;
+    width: 100%;
+    bottom: 0;
+    border: 0;
+
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+
+}
+
+.contact__title {
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 16px;
+    margin: auto;
+
+}
+
+.item__contact {
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid color #fff;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 0px;
+    background-color: var(--color-primary);
+    border-top: 2px solid var(--color-secondary);
+    white-space: nowrap;
+}
+
+
+/* MENU RESPOSIVE */
+
+@media screen and (max-width: 1100px) {
+    .logo__name {
+        font-size: 28px;
+    }
+
+    .nav-label {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    label .nav-img {
+        padding: 20px 40px;
+        min-width: 120px;
+    }
+
+    .nav__menu {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-secondary);
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        z-index: 2000;
+
+    }
+
+    .nav-input:checked+.nav__menu {
+        clip-path: circle(100% at center);
+    }
+
+    .nav__menu {
+        transition: 0.8s all;
+    }
+
+    .nav__menu:hover {
+        color: var(--blancoNatural);
+    }
+
+    .contact__title{
+        font-size: 12px;
+    }
+
+    .footer{
+        position: revert;
+        bottom: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .logo__name {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    label .nav-img {
+        padding: 20px 40px;
+        min-width: 120px;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .imagen__logo {
+        width: 60px;
+        display: block;
+        white-space: break-spaces;
+    }
+
+    .logo__name {
+        font-size: 15px;
+        margin-left: 10px;
+        display: block;
+        white-space: break-spaces;
+    }
+
+    label .nav-img {
+        padding: 20px 40px;
+        /* max-width: 10px; */
+    }
+
+    .contact__title{
+        font-size: 12px;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+}
