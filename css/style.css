@@ -27,8 +27,7 @@ body {
     margin: 0px auto;
     overflow: hidden;
     padding: 40px;
-    /* min-height: 200px; */
-    margin-bottom: 100px;
+
 }
 
 .hero {
@@ -205,6 +204,20 @@ input {
     background: #00ff15;
     border-radius: 8px;
 
+}
+
+.carousel-control-prev {
+    position: absolute;
+    top: 350px;
+    bottom: 200px;
+    margin: auto;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 350px;
+    bottom: 200px;
+    margin: auto;
 }
 
 .carousel-control-prev-icon {
