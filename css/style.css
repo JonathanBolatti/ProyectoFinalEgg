@@ -14,7 +14,7 @@ body {
     /* font-family: 'Hammersmith One', sans-serif; */
 
     /* background: var(--color-primary); */
-    
+
     background: -webkit-linear-gradient(to right, #24243e, #1b2f62, #0f0c29);
     background: linear-gradient(to right, #24243e, var(--color-primary), #0f0c29);
 
@@ -60,10 +60,7 @@ input {
     justify-content: space-between;
     align-items: center;
 
-
 }
-
-
 
 .nav__item {
     color: #fff;
@@ -146,21 +143,20 @@ input {
     white-space: nowrap;
     margin: auto;
     margin-left: 10px;
-    transition: all 0.3s; 
+    transition: all 0.3s;
 }
-.logo__name:hover{
+
+.logo__name:hover {
     text-shadow: 0 0 7px var(--color-secondary), 0 0 10px var(--color-secondary);
 
 }
 
-main{
+main {
     background: var(--color-primary);
 }
 
 
-
 /* SLIDER */
-
 
 .img-slider {
     width: 100%;
@@ -168,66 +164,63 @@ main{
     border-radius: 8px;
 }
 
-
+.carousel {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-right: 15%;
-    margin-bottom: 12rem;
-    margin-left: 15%;
+    margin-bottom: -20px;
     list-style: none;
+
 }
 
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 30 px;
-    height: 3 px;
+    width: 30px;
+    height: 3px;
     padding: 0;
-    margin-right: 3 px;
-    margin-left: 3 px;
-    text-indent: -999 px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
     cursor: pointer;
     background-color: var(--color-secondary);
     background-clip: padding-box;
     border: 0;
-    border-top: 10 px solid transparent;
-    border-bottom: 10 px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     /* opacity: .5; */
     transition: opacity .6s ease;
     position: relative;
+
 }
 
 
 .explicacion-print {
-    padding: 20px;
+    padding: 5px 20px;
     margin: 20px auto;
     color: #fff;
     text-align: center;
-    border: 2 px solid;
+    border: 2px solid;
     border-radius: 8px;
     border: 1px solid var(--color-secondary);
-
+    width: 90%;
+    height: 100%;
 }
 
 .carousel-control-prev {
     position: absolute;
     top: 450px;
-    bottom: 200px;
     margin: auto;
 }
 
 .carousel-control-next {
     position: absolute;
     top: 450px;
-    bottom: 200px;
     margin: auto;
 }
 
@@ -378,8 +371,12 @@ main{
     .container {
         padding: 0;
         padding-top: 20px;
-        margin: 20px auto 100px;
-        height: calc(50vh + 150px);
+        /* margin: 20px auto 100px; */
+        height: calc(100vh + 20px);
+    }
+
+    .carousel-indicators {
+        margin-bottom: -10px;
     }
 
 }
@@ -402,29 +399,14 @@ main{
         white-space: break-spaces;
     }
 
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin-right: 15%;
-        margin-bottom: 12rem;
-        margin-left: 15%;
-        list-style: none;
-    }
-
-
+    
     .container {
         margin-bottom: 0 px;
 
         padding: 0;
         padding-top: 20px;
-        margin: 20px auto 100px;
-        height: calc(50vh + 100px);
+        /* margin: 20px auto 100px; */
+        height: calc(100vh + 40px);
     }
 }
 
@@ -432,26 +414,13 @@ main{
 
 @media screen and (max-width: 400px) {
 
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin-right: 15%;
-        margin-bottom: 13.5rem;
-        margin-left: 15%;
-        list-style: none;
-    }
 
     .container {
         padding: 0;
         padding-top: 20px;
-        margin: 20px auto 100px;
-        height: calc(50vh + 60px);
+        /* margin: 20px auto 100px; */
+        /* height: calc(50vh + 60px); */
+        height: 100vh;
     }
 
     .contact__title {
