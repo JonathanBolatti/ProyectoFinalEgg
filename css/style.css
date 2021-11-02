@@ -322,6 +322,13 @@ main {
         font-size: 12px;
     }
 
+    .container {
+        padding: 0;
+        padding-top: 20px;
+        /* margin: 20px auto 100px; */
+        height: calc(100vh + 20px);
+    }
+
 }
 
 
@@ -338,6 +345,13 @@ main {
 
     .d-none {
         display: block !important;
+    }
+
+    .container {
+        padding: 0;
+        padding-top: 20px;
+        /* margin: 20px auto 100px; */
+        height: calc(100vh + 20px);
     }
 
 }
@@ -399,7 +413,7 @@ main {
         white-space: break-spaces;
     }
 
-    
+
     .container {
         margin-bottom: 0 px;
 
@@ -427,4 +441,16 @@ main {
         font-size: 10px;
     }
 
-}
+   
+
+    }
+
+    @media screen and (max-width: 320px) {
+        .container {
+            margin: 0 auto;
+            padding: 20px 0px;
+        }
+
+        }
+
+    
