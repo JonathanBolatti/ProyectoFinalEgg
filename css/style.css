@@ -455,6 +455,20 @@ main {
         height: calc(100vh - 200px);
     }
 
+    .carousel-control-prev {
+        position: absolute;
+        top: 600px;
+        margin: 20px auto;
+        height: 30px;
+    }
+
+    .carousel-control-next {
+        position: absolute;
+        top: 600px;
+        margin: 20px auto;
+        height: 30px;
+    }
+
     .contact__title {
         font-size: 10px;
     }
