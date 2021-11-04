@@ -425,6 +425,21 @@ main {
         /* margin: 20px auto 100px; */
         height: calc(100vh + 40px);
     }
+
+    .carousel-control-prev {
+        position: absolute;
+        top: 600px;
+        margin: 20px auto;
+        height: 30px;
+    }
+
+    .carousel-control-next {
+        position: absolute;
+        top: 600px;
+        margin: 20px auto;
+        height: 30px;
+    }
+
 }
 
 
@@ -437,7 +452,7 @@ main {
         padding-top: 20px;
         /* margin: 20px auto 100px; */
         /* height: calc(50vh + 60px); */
-        height: 100vh;
+        height: calc(100vh - 200px);
     }
 
     .contact__title {
@@ -452,6 +467,6 @@ main {
     .container {
         margin: 0 auto;
         padding: 20px 0px;
+        height: calc(100vh - 200px);
     }
-
 }
