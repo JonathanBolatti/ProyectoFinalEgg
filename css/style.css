@@ -452,7 +452,7 @@ main {
         padding-top: 20px;
         /* margin: 20px auto 100px; */
         /* height: calc(50vh + 60px); */
-        height: calc(100vh - 200px);
+      
     }
 
     .carousel-control-prev {
@@ -481,6 +481,5 @@ main {
     .container {
         margin: 0 auto;
         padding: 20px 0px;
-        height: calc(100vh - 200px);
     }
 }
